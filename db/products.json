@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Cocacola",
+      "description": "Descripcion de una gaseosa"
+    },
+    {
+      "id": 2,
+      "name": "Pepsi",
+      "description": "Descripcion de una gaseosa"
+    },
+    {
+      "id": 3,
+      "name": "Galletita",
+      "description": "Descripcion de galletita"
+    },
+    {
+      "id": 4,
+      "name": "Galletita Dulces",
+      "description": "Descripcion de galletita dulces"
+    },
+    {
+      "id": 5,
+      "name": "Mani",
+      "description": "Descripcion de Mani"
+    },
+    {
+      "id": 6,
+      "name": "Caramelos",
+      "description": "Breve descripcion"
+    },
+    {
+      "id": 8,
+      "name": "Caramelosss",
+      "description": "Brevedescripcion4323"
+    }
+  ]
+}
