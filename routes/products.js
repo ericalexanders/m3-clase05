@@ -27,7 +27,8 @@ router.post("/", [
   if (createResponse) {
     return res.send({ status: 'ok', message: 'Created' })
   }
-  res.send("Error")
+
+  res.status(500).send("Error")
 })
 
 module.exports = router;
