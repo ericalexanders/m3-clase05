@@ -5,12 +5,14 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
 const session = require("express-session");
+const cors = require("cors")
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const productsRouter = require('./routes/products')
 
 const app = express();
+app.use(cors())
 
 const unDia = 1000 * 60 * 60 * 24;
 

@@ -27,7 +27,11 @@ router.post('/', function(req, res, next) {
 });
 
 router.get("/my-profile", (req, res, next) => {
-  res.render("profile", { title: 'My Profile' })
+  if (req.session.user) {
+    const user = req.session.user
+    res.render("profile", { title: 'My Profile', user })
+  }
+  return res.status(400).send("No iniciaste session")
 })
 
 
@@ -42,8 +46,10 @@ router.post("/login", function(req, res, next) {
 
   const isValid = bcrypt.compareSync(body.password, user.password)
 
-  if (isValid) 
+  if (isValid) {
+    req.session.user = user
     res.redirect('/users/my-profile')
+  }
   else
     res.status(401).send("Password no valido")
 })

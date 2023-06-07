@@ -6,8 +6,8 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to My profile</p>
-    <form method="GET" action="/users/logout">\
+    <p>Welcome <%= user.email %></p>
+    <form method="GET" action="/users/logout">
       <button>Logout</button>
     </form>
   </body>
